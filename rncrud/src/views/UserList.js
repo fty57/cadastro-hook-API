@@ -1,5 +1,5 @@
 import React from "react"
-import { View, Text, FlatList } from "react-native"
+import { View, Alert, FlatList } from "react-native"
 import users from "../data/users"
 import { ListItem, Button, Icon } from 'react-native-elements';
 
@@ -40,7 +40,7 @@ export default props => {
      function getUserItem({ item: user }) {
           return (
                <ListItem
-                    leftAvatar={{ source: { uri: user.avatarUrl } }}
+                    leftAvatar={{ source: { uri: user.avatarUrl }}}
                     key={user.id}
                     title={user.name}
                     subtitle={user.email}
