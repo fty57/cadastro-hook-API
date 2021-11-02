@@ -1,10 +1,9 @@
 import React from 'react';
-import {Button} from 'react-native'
 import { NavigationContainer } from "@react-navigation/native"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import UserList from './src/views/UserList';
 import UserForm from './src/views/UserForm';
-import { Icon } from 'react-native-elements';
+import { Button, Icon } from 'react-native-elements';
 
 const Stack = createNativeStackNavigator()
 
