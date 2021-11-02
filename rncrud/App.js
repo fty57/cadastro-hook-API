@@ -27,7 +27,8 @@ export default function App() {
                 />
               )
             }
-          }} />
+          }} 
+        />
         <Stack.Screen
           name="UserForm"
           component={UserForm}
