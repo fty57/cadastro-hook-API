@@ -1,16 +1,18 @@
 import React from 'react';
 import { NavigationContainer } from "@react-navigation/native"
-import { createNativeStackNavigator } from "@react-navigation/native-stack"
+import { createStackNavigator } from "@react-navigation/stack"
 import UserList from './src/views/UserList';
 import UserForm from './src/views/UserForm';
 import { Button, Icon } from 'react-native-elements';
 
-const Stack = createNativeStackNavigator()
+const Stack = createStackNavigator()
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="UserList" screenOptions={screenOptions}>
+      <Stack.Navigator 
+        initialRouteName="UserList" 
+        screenOptions={screenOptions}>
         <Stack.Screen
           name="UserList"
           component={UserList}
